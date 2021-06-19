@@ -1,0 +1,142 @@
+
+:root {
+    --primary: #618fa6;
+    --secundary: #243041;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ header {
+     background: url(../slike/besplatne-stock-slike-download.jpg) no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+ }
+ nav ul li {
+     float: right;
+     display: inline;
+     margin-left: 40px;
+ }
+ .nav-container {
+     padding: 30px 70px;
+ }
+ nav ul li a{
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 25, 46);
+}
+
+nav .logo {
+    font-size: 2rem;
+    color: rgb(0, 25, 46);
+}
+
+.hello {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.hi {
+   text-align: center;
+   margin-top: 40px;
+
+}
+
+.container {
+    margin: 70px 30px 20px 30px;
+}
+.wrapper {
+    display: flex;
+    flex: 0 0 10%;
+  /*  flex-wrap: wrap;*/
+}
+
+.wrapper article {
+    background-color: var(--primary);
+    margin-left: 30px;
+    padding: 20px 30px;
+    color: rgba(255, 255, 255, 0.582);
+}
+.text:hover {
+     margin-top: -15px;
+    transition: .3s ease;
+    background-color: var(--secundary);
+}
+
+.wrapper article h3 {
+    margin: 20px auto;
+    font-size: 1.4rem;
+}
+.wrapper article p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+    
+
+    /*.card {
+        max-width: 160px;
+        margin: 40px auto;
+        background: cornflowerblue;
+    }*/
+
+.fixed {
+    background: url(../css/index.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    margin-top: 60px;
+}
+
+.fixed article {
+    padding: 50px;
+    text-align: center;
+}
+
+.fixed article h1{
+   font-size: 2rem;
+   color: blue;
+}
+
+.fixed article h5{
+   font-size: 1.2rem;
+   color: #fff;
+   margin-top: 20px;
+}
+
+footer {
+    background: #618fa6;
+    margin-top: 50px;
+    height: 20vh;
+    
+
+        font-size: 1.6rem;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+@media (max-width: 700px) {
+    .nav-container {
+    padding: 50px 30px;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper article {
+    background-color: var(--primary);
+    margin-bottom: 50px;
+    flex: 0 0 90%;
+    padding: 20px 30px;
+    
+}
+}
